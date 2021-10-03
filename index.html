@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/006727c402.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Ronak Gaikar</title>
+</head>
+
+<body>
+  <audio autoplay>
+    <source src="jv.mp3">
+  </audio>
+  <div id="home">
+    <div class="topnav" id="myTopnav">
+      <a href="#home" onmousedown="bleep.play()" class="active"><i class="fas fa-home"></i></a>
+      <a href="#about" onmousedown="bleep.play()">About</a>
+      <a href="#contact" onmousedown="bleep.play()">Contact</a>
+      <a href="#projects" onmousedown="bleep.play()">Projects</a>
+      <a href="javascript:void(0);" class="icon" onclick="ronakFunc()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    <div class="content">
+      <img src="rg.png" id="rg" alt="...">
+      <h2 class="card-title">
+        Ronak Gaikar
+      </h2>
+    </div>
+    <h2 class="proffession">
+     Web Developer 
+    </h2>
+    <div class="name">
+      <h1 class="namee">
+        Ronak Gaikar
+      </h1>
+      <p class="about-me">I like to code very minimum that required, well organised and clean. Which day i didn't code i
+        am very sad and depressed. Coding is my passion. I can do coding day and night. I like to learn more and more
+        programming languages. </p>
+    </div>
+    <hr>
+    <div id="projects">
+    <h2 style="color: white;text-align: left;margin-left: 15px;margin-top: 28px;font-weight: 400;">Projects</h2>
+    <div class="card">
+      <img src="bg.jpg" alt="bg" id="bg" style="width:100%">
+      <div class="container">
+        <h3 class="project-name"><b>Village Website</b></h3>
+        <p class="project-title">In This We Can See Information About This Village</p>
+        <button class="project-btn"><a class="projects-a" target="_blank"
+            href="https://techovertaker.github.io/ghumeshwarvillage.github.io" onmousedown="bleep.play()">View</a></button>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div id="about">
+    <h2 class="aboutt" style="color: white;text-align: left;
+    margin-left: 15px;
+    margin-top: 28px;
+    font-weight: 400;;">About</h2>
+    <p style="color: white;margin-right: 861px;margin-left: 14px;">Now I,m learning php for backend web development from youtube,w3 school, and stackoverflow. I am in 9th std so i have continued my school study as well. Future plan is to learn from D.Y patil univercity.</p>
+    <img src="dy.jpeg" alt="" style="margin-top: -107px;margin-left: 548px;border: 2px solid white;border-radius: 17px;">
+  </div>
+  <hr>
+  <div id="contact"></div>
+  
+  <a href="" style="font-size: 50px; margin-left: 594px" ><i class="far fa-envelope"></i></a>
+  <a href="" style="font-size: 50px;" ><i class="fab fa-whatsapp"></i></a>
+  <a href="" style="font-size: 50px;" ><i class="fab fa-instagram"></i></a>
+  </div>
+  </div>
+  <script>
+    function ronakFunc() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    let bleep = new Audio();
+    bleep.src = "click.mp3";
+  </script>
+
+</body>
+
+</html>
