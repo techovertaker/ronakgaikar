@@ -1,38 +1,23 @@
-.active{
-  color: #f85206ea;
-}
-.proffession{
-    color: white;
-    display: inline-block;
-    border: 2px solid #f85206ea;
-    padding: 10px 30px;
-    padding-right: 40px;
-    border-right: 14px solid #f85206ea;
-    margin-left: 13px;
-    margin-top: 105px;
-}
 body {
   background-color: black;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
-.all{
- 
 
-}
-.content{
-  float: right;
-  margin-right: 284px;
-  margin-top: 57px;
-}
+/* Navigation Bar */
 
+.active{
+  color: #f85206ea;
+}
+.fa-home{
+  color: #f85206ea;
+}
 .topnav {
   overflow: hidden;
   background-color: black;
   border-bottom: 2px solid #f85206ea;
   position: fixed;
 }
-
 .topnav a {
   float: left;
   display: block;
@@ -43,30 +28,32 @@ body {
   text-decoration: none;
   font-size: 27px;
 }
-
 .topnav a:hover {
   color: #f85206ea;
 }
-
-.active{
-  color: #f85206ea;
-}
-
 .topnav .icon {
   display: none;
 }
-/* .card-img-top{
-  border: 2px solid #f85206ea;
-  margin-right: 63px;
-  margin-top: 18px;
-  width: 250px;
-  text-align: center;
-  margin-left: 15px;
-  border-radius: 31px;
-} */
-#rg{
+
+/* Content Below Navigation bar and Above Projects Section*/
+
+.proffession{
+    color: white;
+    display: inline-block;
+    border: 2px solid #f85206ea;
+    padding: 10px 30px;
+    padding-right: 40px;
+    border-right: 14px solid #f85206ea;
+    margin-left: 13px;
+    margin-top: 105px;
 }
-.name{
+#rg{
+  height: 300px;
+}
+.content{
+  float: right;
+  margin-right: 284px;
+  margin-top: 57px;
 }
 .namee{
   color: #f85206ea;
@@ -94,30 +81,34 @@ body {
 25% { margin-left: 0px}
 }
 
-i{
-  color: aliceblue;
-}
-.fa-home{
-  color: #f85206ea;
-}
+/* Projects Section */
+
 .card {
   border: 2px solid white;
-    border-radius: 15px;
-    margin-left: 11px;
-    padding-bottom: 13px;
+  border-radius: 15px;
+  margin-left: 11px;
+  padding-bottom: 13px;
   transition: 0.3s;
   width: 40%;
 }
-
+ .projects{
+   color: white;
+   text-align: left;
+   margin-left: 15px;
+   margin-top: 28px;
+   font-weight: 400;
+}
 .card:hover {
   box-shadow: 0 -10px 42px 0 white;
 }
-
 .container {
   padding: 2px 16px;
 }
 .project-name{
   color: white;
+}
+#bg{
+  border-radius: 15px;
 }
 .project-title{
   color: #f2f2f2;
@@ -126,7 +117,6 @@ i{
   background-color: #f85206ea;
   color: white;
   border: 2px solid white;
-  border-radiius: 173px;
   border-radius: 30px;
   height: 31px;
   width: 75px;
@@ -136,9 +126,43 @@ i{
   text-decoration: none;
   font-size: 20px;
 }
-#bg{
-  border-radius: 15px;
+
+/* about section */
+
+#dy{
+  margin-top: -107px;
+  margin-left: 548px;
+  border: 2px solid white;
+  border-radius: 17px;
 }
+.aboutt{
+  color: white;
+  text-align: left;
+  margin-left: 14px;
+}
+.abouttt{
+  color: white;
+  margin-right: 861px;
+  margin-left: 14px;
+}
+i{
+  color: aliceblue; 
+  /* font-size: 50px; 
+  margin-left: 594px */
+}
+.contact{
+  color: #f2f2f2;
+}
+.gmail{
+  margin-left: 488px;
+}
+.contact-icon{
+  font-size: 50px;
+}
+
+
+/* media queries for making navigation bar responsive */
+
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -158,5 +182,57 @@ i{
     float: none;
     display: block;
     text-align: left;
+  }
+}
+
+/* media query for responsiveness */
+@media screen and (max-width: 480px){
+  .content{
+    margin-right: 150px;
+  }
+  #rg{
+    height: 207px;
+  }
+  .proffession{
+    margin-top: -29px;
+  }
+  .abouttt{
+    color: white;
+    margin-right: 1px;
+    margin-left: 3px;
+  }
+  #dy{
+    margin-top: 1px;
+    margin-left: 92px;
+  }
+  .gmail{
+    margin-left: 167px;
+  }
+}
+@media screen and (max-width: 350px){
+  .content{
+    margin-right: 83px;
+    margin-top: 76px;
+  }
+  .card{
+    width: 87%;
+  }
+  #dy {
+    margin-left: 41px;
+  }
+  .gmail {
+    margin-left: 104px;
+}
+} 
+@media screen and (max-width: 300px){
+  .content{
+    margin-right: 41px;
+  }
+  #dy{
+    margin-left: 37px;
+    height: 139px;
+  }
+  .gmail{
+    margin-left: 57px;
   }
 }

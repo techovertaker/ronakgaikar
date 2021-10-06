@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -8,11 +7,17 @@
   <link rel="stylesheet" href="style.css">
   <title>Ronak Gaikar</title>
 </head>
-
 <body>
+  <!-- Background Music some broweser doesn't support -->
+  <!-- <audio style="display: none;" controls autoplay loop>
+    <source src="jv.mp3" type="audio/mp3">
+  </audio> -->
+  <!-- Home section start here-->
   <div id="home">
     <div class="topnav" id="myTopnav">
-      <a href="#home" onmousedown="bleep.play()" class="active"><i class="fas fa-home"></i></a>
+      <a href="#home" onmousedown="bleep.play()" class="active">
+  <!-- Icon From awesome text --><i class="fas fa-home"></i>
+      </a>
       <a href="#about" onmousedown="bleep.play()">About</a>
       <a href="#contact" onmousedown="bleep.play()">Contact</a>
       <a href="#projects" onmousedown="bleep.play()">Projects</a>
@@ -20,6 +25,7 @@
         <i class="fa fa-bars"></i>
       </a>
     </div>
+    <!-- content below navigation bar and above projects section -->
     <div class="content">
       <img src="rg.png" id="rg" alt="...">
       <h2 class="card-title">
@@ -38,8 +44,9 @@
         programming languages. </p>
     </div>
     <hr>
+  <!-- projects section -->
     <div id="projects">
-    <h2 style="color: white;text-align: left;margin-left: 15px;margin-top: 28px;font-weight: 400;">Projects</h2>
+    <h2 class="projects">Projects</h2>
     <div class="card">
       <img src="bg.jpg" alt="bg" id="bg" style="width:100%">
       <div class="container">
@@ -51,23 +58,23 @@
     </div>
   </div>
   <hr>
+  <!-- about section -->
   <div id="about">
-    <h2 class="aboutt" style="color: white;text-align: left;
-    margin-left: 15px;
-    margin-top: 28px;
-    font-weight: 400;;">About</h2>
-    <p style="color: white;margin-right: 861px;margin-left: 14px;">Now I,m learning php for backend web development from youtube,w3 school, and stackoverflow. I am in 9th std so i have continued my school study as well. Future plan is to learn from D.Y patil univercity.</p>
-    <img src="dy.jpeg" alt="" style="margin-top: -107px;margin-left: 548px;border: 2px solid white;border-radius: 17px;">
+    <h2 class="aboutt">About</h2>
+    <p class="abouttt">Now I,m learning php for backend web development from youtube,w3 school, and stackoverflow. I am in 9th std so i have continued my school study as well. Future plan is to learn from D.Y patil univercity.</p>
+    <img src="dy.jpeg" id="dy" alt="">
   </div>
   <hr>
+  <!-- contact section. Icons added from awesome text -->
   <div id="contact"></div>
-  
-  <a href="https://mail.google.com/mail/u/?authuser=ronakgaikar4@gmail.COM" onmousedown="bleep.play()" target="_blank" style="font-size: 50px; margin-left: 594px" ><i class="far fa-envelope"></i></a>
-  <a href="https://bit.ly/3a2lQgI" onmousedown="bleep.play()" style="font-size: 50px;" target="_blank" ><i class="fab fa-whatsapp"></i></a>
-  <a href="https://www.instagram.com/titaniumflims/" onmousedown="bleep.play()" style="font-size: 50px;" target="_blank" ><i class="fab fa-instagram"></i></a>
+  <a href="https://mail.google.com/mail/u/?authuser=ronakgaikar4@gmail.COM" onmousedown="bleep.play()" target="_blank" class="gmail contact-icon" ><i class="far fa-envelope"></i></a>
+  <a href="https://bit.ly/3a2lQgI" onmousedown="bleep.play()" target="_blank" class="contact-icon" ><i class="fab fa-whatsapp"></i></a>
+  <a href="https://www.instagram.com/titaniumflims/" onmousedown="bleep.play()" target="_blank" class="contact-icon"><i class="fab fa-instagram"></i></a>
   </div>
   </div>
+  <!-- Home section end here-->
   <script>
+  // Function for making Navigation bar responsive
     function ronakFunc() {
       var x = document.getElementById("myTopnav");
       if (x.className === "topnav") {
@@ -76,10 +83,9 @@
         x.className = "topnav";
       }
     }
+  // Funtion for sound effect on click of any button/a
     let bleep = new Audio();
     bleep.src = "click.mp3";
   </script>
-
 </body>
-
 </html>
